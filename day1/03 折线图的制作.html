@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 600px;
+            height: 400px;
+            background-color: #ccc;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@4.7.0/dist/echarts.js"></script>
+</head>
+<body>
+    <div></div>
+    <script>
+        var mycharts=echarts.init(document.querySelector("div"))
+        var xdata=['A','B','C','D','E','F']
+        var ydata=[100,101,102,145,198,256]
+        var option={
+            xAxis:{
+                type:'category',
+                data:xdata
+            },
+            yAxis:{
+                type:'value'
+            },
+            series:[{
+                name:"服装工厂",
+                data:ydata,
+                type:'line'
+            }],
+        }
+        mycharts.setOption(option)
+    </script>
+</body>
+</html>

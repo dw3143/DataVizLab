@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            width: 100%;
+            position: relative;
+        }
+        .box1{
+            width: 100%;
+            background: url("./images/bg1.png") no-repeat center center;
+            height: 1300px;
+            background-attachment: fixed;
+            position: relative;
+            overflow: hidden;
+        }
+        .box2{
+            width: 100%;
+            background: url("./images/bg2.png") no-repeat center center;
+            height: 1300px;
+            background-attachment: fixed;
+            /* position: relative; */
+            overflow: hidden;
+        }
+        .box3{
+            width: 100%;
+            background: url("./images/bg3.png") no-repeat center center;
+            height: 1300px;
+            background-attachment: fixed;
+            /* position: relative; */
+            overflow: hidden;
+        }
+        .box1 span,.box2 span,.box3 span{
+            width: 50%;
+            height: 100px;
+            line-height: 100px;
+            display: block;
+            background-color: rgba(155,105,20,0.2);
+            color: aquamarine;
+            text-align: center;
+            font-size: 32px;
+        }
+        .box2 span{
+            position: absolute;
+            top: 30px;
+            left: 200px;
+        }
+        .box2 span{
+            position: relative;
+            top: 30px;
+            left: 100px;
+        }
+        .box3 span{
+            position: relative;
+            top: 30px;
+            left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box1"><span>Text information 1</span></div>
+        <div class="box2"><span>Text information 2</span></div>
+        <div class="box3"><span>Text information 3</span></div>
+    </div>
+</body>
+</html>

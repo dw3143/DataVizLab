@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 引入echarts.js 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@4.7.0/dist/echarts.js"></script>
+    <style>
+        div{
+            width: 600px;
+            height: 400px;
+            background-color: #ccc;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- 步骤2. 准备一个呈现图表的盒子 -->
+    <div></div>
+    <!-- 步骤3. 初始化echarts的实例代码 -->
+    <script>
+        var mCharts=echarts.init(document.querySelector('div'))
+        // 步骤4
+        var option={
+            xAxis:{
+                type:'category',
+                data:['A','B','C','D','E','F']
+            },
+            yAxis:{
+                type:'value'
+            },
+            series:[
+                {
+                    name:"数学",
+                    type:'bar',
+                    data:['100','250','22','66','32','101']
+                }
+            ]
+        }
+        // 步骤5. 将配置项设置给实例对象
+        mCharts.setOption(option)
+    </script>
+</body>
+</html>
+
