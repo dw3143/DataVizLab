@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>疯狂摩天轮</title>
+    <style>
+        body{
+            background-image: url("img/2.jpg");
+            height: 100%;
+        }
+        .broket{
+            position: fixed;
+            top: 374px;
+            left: 611px;
+        }
+        .fsw{
+            background: url("img/fsw.png") no-repeat center/100%;
+            width: 600px;
+            height: 600px;
+            position: absolute;
+            top: 90px;
+            left: 492px;
+            animation: rotate 1s linear infinite;
+        }
+        .pic1{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: 30px;
+            left: 41px;
+            animation: rotate 1s linear infinite reverse;
+        }
+        .pic2{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: 33px;
+            left: 431px;
+            animation: rotate 1s linear infinite reverse;
+        }
+        .pic3{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: 418px;
+            left: 42px;
+            animation: rotate 1s linear infinite reverse;
+        }
+        .pic4{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: 431px;
+            left: 431px;
+            animation: rotate 1s linear infinite reverse;
+        }
+        /* 定义动画 */
+        @keyframes rotate{
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="broket"><img src="./img/bracket.png" alt=""></div>
+    <div class="fsw">
+        <div class="pic">
+            <img class="pic1" src="./img/boy.png" alt="">
+            <img class="pic2" src="./img/dog.png" alt="">
+            <img class="pic3" src="./img/mimi.png" alt="">
+            <img class="pic4" src="./img/girl.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 800px;
+            height: 600px;
+            border: 2px dotted red;
+            background-color: bisque;
+            margin: 100px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            /* 动画效果 */
+            animation-name: mz;/*动画名称*/
+            animation-duration: 1s;/*移动时间*/
+            animation-timing-function:liner;/*动画类型*/
+            animation-direction: normal;/*设置反方向运动*/
+            animation-iteration-count:infinite;/*设置运动次数*/
+        }
+        .box2{
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            /* 动画效果 */
+            animation-name: mz;/*动画名称*/
+            animation-duration: 2s;/*移动时间*/
+            animation-timing-function:liner;/*动画类型*/
+            animation-direction: normal;/*设置反方向运动*/
+            animation-iteration-count:infinite;/*设置运动次数*/
+        }
+        .box3{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            /* 动画效果 */
+            animation-name: mz;/*动画名称*/
+            animation-duration: 3s;/*移动时间*/
+            animation-timing-function:liner;/*动画类型*/
+            animation-direction: normal;/*设置反方向运动*/
+            animation-iteration-count:infinite;/*设置运动次数*/
+        }
+        /*定义动画1*/
+        @keyframes move{
+            0%{transform: translateX(0px) translateY(0px);}
+            25%{transform:translateX(500px) translateY(0px);}
+            50%{transform:translateX(500px) translateY(400px)}
+            75%{transform: translateX(0px) translateY(400px);}
+            100%{transform: translateX(0px) translateY(0px);}
+        }
+        .box:hover .box1{
+            animation-play-state: paused;/*设置动画是否暂停*/
+        }
+
+        @keyframes mz{
+            from{
+                transform: translateX(0px);
+            }
+            to{
+                transform: translateX(500px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">
+            <div class="box2"></div>
+        </div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>
