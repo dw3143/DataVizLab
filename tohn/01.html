@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大宋不夜城</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            background: url(./dasong.jpg) no-repeat center;
+            width: 100%;
+            height: 800px;
+        }
+
+        h1 {
+            font-size: 64px;
+            width: 100%;
+            text-align: center;
+            margin-top: 0px;
+            color: aquamarine;
+        }
+
+        p {
+            text-align: center;
+            font-size: 30px;
+            color: aquamarine;
+        }
+
+        #content {
+            width: 14%;
+            height: 20%;
+            position: absolute;
+            bottom: 76%;
+            left: 76%;
+            transform: rotate(0deg);
+            font-size: 20px;
+            color: aquamarine;
+        }
+        #lan {
+            position: absolute;
+            top: 2%;
+            left: 2%;
+            font-size: 50px;
+            color: deeppink;
+            animation: per 10s linear infinite;
+            transform-origin: 100px;
+        }
+        #lan img{
+            width: 200px;
+            height: 200px;
+        }
+
+        @keyframes per {
+            0% {
+                transform: rotate(0deg);
+                color: deeppink;
+            }
+
+            25% {
+                transform: rotate(-30deg);
+                color: chartreuse;
+            }
+
+            50% {
+                transform: rotate(0deg);
+                color: skyblue;
+            }
+
+            75% {
+                transform: rotate(30deg);
+                color: orange;
+            }
+
+            100% {
+                transform: rotate(0deg);
+                color: lightcoral;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <!-- <div id="cc"></div> -->
+        <h1>大宋不夜城</h1>
+        <p>欢迎你！</p>
+        <div id="content">
+            夜幕降临，灯火辉煌，城墙高耸，宛如天堑。河水潺潺，船舶喧哗，商贾云集，繁华盛夏。钟声丕息，梦魂难眠，儒士雅士，书声琅琅。烤肉酒肆，人声鼎沸，夜市繁荣，尽显宋朝风韵。花灯万盏，璀璨如星，美酒佳肴，香气四溢。繁华背后，古城历史，不夜城中，传承千年文化的精髓。
+        </div>
+        <div id="lan">
+            <img src="./hongqi.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

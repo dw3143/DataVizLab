@@ -1,0 +1,28 @@
+
+.user-input {
+    width: 400px;
+    height: 40px;
+    position: absolute;
+    top: 10%;
+    left: 9%;
+    border: 2px solid blue;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    text-indent: 10px;
+    }
+        
+.user-btn {
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    top: 10%;
+    left: 38%;
+    border: none;
+    border-radius: 5px;
+    background: blue;
+    vertical-align: middle;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    }
