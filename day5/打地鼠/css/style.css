@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#gameDiv{
+	width: 330px;
+	height: 330px;
+	margin: 50px auto;
+	background: url(../img/5.jpg);
+}
+
+#gameDiv img{
+	width: 100px;
+	height: 100px;
+}
+
+#source{
+	width: 100px;
+	height: 50px;
+	margin: 0px auto;
+	background: gold;
+	/*文字水平居中*/
+	text-align: center;
+	/*文字垂直居中*/
+	line-height:50px;
+}
+
+.title{
+	position: relative;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	color: orangered;
+	width: 330px;
+	margin: 20px auto;
+	/*text-align: center;*/
+}
+
+#button{
+	width: 80px;
+	height: 50px;
+	margin: 20px auto;
+	/*字体类型*/
+	font-family: "微软雅黑";
+	/*字号大小*/
+	font-size: 30px;
+	/*字体颜色*/
+	color: red;
+}

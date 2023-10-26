@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新浪微博</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .index{
+            height: 42px;
+            /* border: 2px solid black; */
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            /* border-left: 1px solid black;
+            border-right: 1px solid black; */
+            background-color: bisque;
+        }
+        a{
+            /* a标签是行内元素，设置宽高无效 */
+            width: 19%;
+            height: 42px;
+            /* background-color: pink; */
+            /* 将行内元素转化成行内块元素，可设置宽高属性 */
+            display: inline-block;
+            /* 清除a标签的下划线 */
+            text-decoration: none;
+            /* 修改字体颜色 */
+            color: #000;
+            /* 设置字体字号 */
+            font-size: 20px;
+            /* 设置字体居中 */
+            text-align: center;
+            /* 行高等于高度，实现垂直居中 */
+            line-height: 42px;
+        }
+        a:hover{
+            color: orange;
+            background-color: blue;
+        }
+        li a{
+            text-align: left;
+            margin-left: 60px;
+        }
+        .day1{
+            margin-top: 20px;
+            width: 1000px;
+            float: left;
+        }
+        .day2{
+            margin-top: 20px;
+            width: 1000px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="index">
+        <a href="#">新浪导航</a>
+        <a href="#">手机新浪网</a>
+        <a href="#">移动客户端</a>
+        <a href="#">微博</a>
+        <a href="#">手机端</a>
+    </div>
+    <div class="day1">
+        <ul>
+            <h3>DAY 1</h3>
+            <li><a href="./day1/01 echarts快速上手.html">1. echarts快速上手</a></li>
+            <li><a href="./day1/02 柱状图制作.html">2. 柱状图制作</a></li>
+            <li><a href="./day1/03 折线图的制作.html">3. 折线图制作</a></li>
+            <li><a href="./day1/04 常用标签.html">4. 常用标签</a></li>
+            <li><a href="./day1/05 选择器.html">5. 选择器</a></li>
+            <li><a href="./day1/06 布局定位.html">6. 布局定位</a></li>
+            <li><a href="./day1/07 仿小米导航栏.html">7. 仿小米导航栏</a></li>
+        </ul>
+    </div>
+    <div class="day2">
+        <ul>
+            <h3>DAY 2</h3>
+            <li><a href="./day2/01 照片墙.html">1. 照片墙</a></li>
+            <li><a href="./day2/02 动画.html">2. 动画</a></li>
+            <li><a href="./day2/03.逐帧动画.html">3. 逐帧动画</a></li>
+            <li><a href="./day2/04 摩天轮.html">4. 摩天轮</a></li>
+        </ul>
+    </div>
+</body>
+</html>

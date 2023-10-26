@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音视频标签</title>
+</head>
+<body>
+    <!-- controls为浏览器提供播放控件
+     音视频播放、暂停、定位、音量
+     loop 循环播放
+     autoplay 自动播放
+     muted 静音
+     -->
+    <div>
+        <audio controls loop autoplay>
+            <source src="./音视频/a.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    
+    <!-- poster 第一帧图片 
+    -->
+    <div>
+        <video poster="./img/iphoneX.jpg" controls height="800px" width="1300px" autoplay loop>
+            <source src="./音视频/movie.webm" type="video/webm">
+        </video>
+    </div>
+    
+</body>
+</html>

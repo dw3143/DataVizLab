@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 400px;
+            background: pink;
+            border: 5px solid blue;
+            /* 设置哪个属性需要过渡 */
+            transition-property: background,border;
+            /* 设置过渡时间 */
+            transition-duration: 5s;
+            /* 过渡方式：linear, ease-in, ease, ease-out */
+            transition-timing-function: ease-in-out;
+            /* 延时过渡 */
+            transition-delay: 2s;
+            /* 综合属性 需要过渡的样式 过渡时间 过渡样式 延时过渡 */
+            /* transition: all 3s ease 0.5s; */
+        }
+        .box:hover{
+            background-color: red;
+            border:20px dashed orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

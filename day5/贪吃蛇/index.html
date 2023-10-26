@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			body {
+				background: #999999;
+			}
+			
+			#snake {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				margin: auto;
+				border: 1px solid white;
+				border-radius: 10px;
+			}
+			
+			@keyframes myrotate {
+				from {
+					transform: rotate(0deg);
+				}
+				to {
+					transform: rotate(360deg);
+				}
+			}
+			
+			#imgBtn {
+				position: absolute;
+				top: 20px;
+				right: 20px;
+				animation: myrotate 4s linear infinite;
+			}
+			
+			.div1 {
+				width: 800px;
+				height: 600px;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				margin: auto;
+			}
+			
+			.div2{
+				width: 100px;
+				height: 100px;
+				background: red;
+				position: absolute;
+				left: -100px;
+				top: 200px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<input type="button" value="下一首" onclick="nextMusic()" />
+		<div class="div1">
+			<!-- 30行 40列  20px -->
+			<canvas id="snake" width="800" height="600">
+			</canvas>
+			<div class="div2">
+				
+			</div>
+		</div>
+
+		<img src="img/musicBtn.png" id="imgBtn" />
+		<!-- audio  video -->
+		<audio id="music" autoplay="autoplay" loop="loop" src="img/洛天依 - 天依投食歌.mp3">您的浏览器不支持Audio标签</audio>
+
+	</body>
+	<script type="text/javascript" src="js/snake.js"></script>
+	<script>
+		var player = document.getElementById("music");
+		var imgBtn = document.getElementById("imgBtn");
+		imgBtn.onclick = function() {
+			// paused 音乐处于暂停状态
+			if(player.paused) {
+				player.play();
+				imgBtn.src = "img/musicBtn.png";
+			} else {
+				player.pause();
+				imgBtn.src = "img/musicBtnOff.png";
+			}
+		}
+		
+		function nextMusic(){
+			player.src = "img/122.mp3"
+		}
+	</script>
+
+</html>

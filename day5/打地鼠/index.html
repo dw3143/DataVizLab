@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>打地鼠</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/ma.js" ></script>
+	</head>
+	<body>
+		<!--<p class="name">-->
+			<!--使用marquee标记不仅可以移动文字，也可以移动图片，表格等-->
+			<!--direction 滚动方向-->
+			<!--滚动方式behavior（scroll:循环滚动，默认效果； slide:只滚动一次就停止； alternate:来回交替进行滚动）-->
+			<!--滚动速度scrollamount（滚动速度是设置每次滚动时移动的长度，以像素为单位）-->
+			<!--滚动延迟scrolldelay（设置滚动的时间间隔，单位是毫秒）-->
+			<!--滚动范围width、height-->
+			<!--滚动背景颜色bgcolor-->
+			<div class="title">			
+			<marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay="1000" loop="2" bgcolor="#00FFFF">打地鼠</marquee>
+			</div>
+		<!--</p>-->
+		
+		<div id="gameDiv">
+			<!--导入草地图片-->
+			<img src="img/5.jpg" onclick="beat(this)"/>
+			<img src="img/5.jpg" onclick="beat(this)"/>
+			<img src="img/5.jpg" onclick="beat(this)"/>
+			<img src="img/5.jpg" onclick="beat(this)"/>
+			<img src="img/5.jpg" onclick="beat(this)"/>
+			<img src="img/5.jpg" onclick="beat(this)"/>
+			<img src="img/5.jpg" onclick="beat(this)"/>
+			<img src="img/5.jpg" onclick="beat(this)"/>
+			<img src="img/5.jpg" onclick="beat(this)"/>
+		</div>		
+		<!--计分框-->
+		<p id="source">得分:0分</p>	
+		<div id="button" onclick="start(this)">START</div>
+	</body>
+</html>

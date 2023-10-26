@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 400px;
+            background-color: purple;
+            border: 1px solid;
+            margin: 0 auto;
+        }
+        .box2{
+            transition:all 3s linear;
+        }
+        .box2:hover{
+            transform: rotateX(45deg);
+            transform: rotateY(60deg);
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">原始效果</div>
+    <div class="box2">旋转效果</div>
+</body>
+</html>
