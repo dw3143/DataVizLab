@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.if的语法结构
+        // if(条件表达式){
+        //     执行语句
+        // }
+
+
+        // if(3>5){
+        //     alert("条件为真")
+        // }
+        // console.log("11111")
+
+        // 进入网吧案例
+        // 弹出一个输入框，用户输入年龄，程序员获得这个值取过来
+        // 使用if语句进行判断，如果年龄>18，则可以执行大括号里的执行语句，进入网吧
+
+        // var age=prompt("请输入你的年龄：");
+        // if(age>=18){
+        //     alert("年龄到了，可进入网吧一起偷耳机了！")
+        // }
+
+        // if else
+        // 语法：
+        // if(条件表达式){
+        //     执行语句1
+        // }else{
+        //     执行语句2
+        // }
+     /*    var age=prompt("请输入你的年龄：");
+        if(age>=18){
+            alert("年龄到了，可进入网吧一起偷耳机了！")
+        }else{
+            alert("你回家好好写作业！")
+        }
+ */
+        // 判断是否为闰年
+        // 算法：能够被4整除且不能被100整除（year%4==0&&year%100！=0），是闰年；或者能够被400整除
+
+        var year=prompt("请输入年份：")
+        if((year%4==0&&year%100!=0)||year%400==0){
+            alert("是闰年")
+        }else{
+            alert("是平年")
+        }
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

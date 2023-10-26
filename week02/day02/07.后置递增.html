@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num=10;
+        num++;
+        console.log(num);
+        // 1.前置递增和后置递增，如果单独使用，效果是一样的
+
+        var age=20;
+
+        // 后置递增,后置递减，是先取值，后计算
+        // 前置递增 前置递减，先计算，后取值
+        // console.log(age++ + age);//20+21
+
+        // console.log(age++ + ++age +age);//20+22+22
+
+        // console.log(age++ + --age + ++age);//20+20+21
+
+        // console.log(--age + ++age - age++ - age-- );//19+20-20-21
+
+        console.log(age-- + ++age -10);//20+20-10
+
+
+
+
+    </script>
+</body>
+</html>
