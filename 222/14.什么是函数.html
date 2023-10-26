@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var sum1=0,sum2=0
+        for(var i=1;i<=20;i++){
+            sum1+=i
+        }
+        for(var j=20;j<=50;j++){
+            sum2+=j
+        }
+        console.log("1-50的累加和为："+sum1)
+        console.log("20-50的累加和为："+sum2)
+
+        // 封装函数，求区间内整数之和
+        function getSum(num1,num2){
+            var sum=0;
+            for(var k=num1;k<=num2;k++){
+                sum+=k
+            }
+            console.log(sum)
+        }
+        getSum(1,50);
+        getSum(1,500);
+        getSum(20,50)
+
+        // 封装函数，求任意两数之和
+        function getSum1(num1,num2){
+            sum=num1+num2
+            console.log(sum)
+        }
+        getSum1(1,100)
+
+        // 封装函数，求两个数中最大值
+        function getMax1(num1,num2){
+            if (num1>=num2) {
+                num=num1
+            }else{
+                num=num2
+            }
+            console.log(num)
+        }
+        getMax1(55,100)
+
+        function getMax2(num1,num2){
+            return num1>num2?num1:num2
+        }
+        console.log(getMax2(55,100))
+        
+    </script>
+</body>
+</html>

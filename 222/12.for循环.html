@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("for循环测试");
+        console.log("for循环测试");
+        console.log("for循环测试");
+        console.log("for循环测试");
+        console.log("for循环测试");
+
+        for(var i=1;i<=20;i++){
+            console.log("for循环测试")
+        }
+
+        var sum=0,ou=0,ji=0,tri=0
+        for(var i=1;i<=100;i++){
+            sum+=i
+            if (i%2==0) {
+                ou+=i
+            }else{
+                ji+=i
+            }
+            if (i%3==0) {
+                tri+=i
+            }
+        }
+        console.log("1-100所有数的总和："+sum)
+        console.log("1-100所有数的平均数："+sum/100)
+        console.log("1-100所有偶数之和："+ou)
+        console.log("1-100所有奇数之和："+ji)
+        console.log("1-100所有被3整除的数字之和："+tri)
+    </script>
+</body>
+</html>

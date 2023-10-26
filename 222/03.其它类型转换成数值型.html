@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str='3.14';
+        // 1. parseInt(变量) 可以把字符型转换成数字型，得到整数
+        console.log(typeof(preseInt(str)))//3
+        var str1="3.98";
+        console.log(parseInt(str1));//3
+        var str2="4.12";
+        // 2. parseFloat(变量) 可以把字符型转换成数字型，得到浮点数
+        console.log(parseFloat(str2))//4.12
+        // 3. number(变量)
+        var str3="123";
+        console.log(Number(str3))
+        console.log(typeof(Number(str3)))
+        // 4. 利用算数运算符“-*/” 进行隐式转换 注：“+”是进行拼接，无法进行转换
+        console.log(typeof('123'-0));//number
+        console.log(typeof('123'*1));//number
+        console.log(typeof('123'/1));//number
+    </script>
+</body>
+</html>
